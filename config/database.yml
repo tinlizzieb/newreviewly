@@ -32,5 +32,4 @@ production:
   username:
   password:
 
-  cucumber:
-  	<<: *TEST
+ 
