@@ -3,7 +3,7 @@
 <head>
   <title>Lizzie's world</title>
   <link rel="stylesheet" type="text/css" href="application.css">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,10 +13,13 @@
 <%= yield %>
 
 	<ul>
-		<a href="https://twitter.com/tinlizzieb" target="_blank">twitter</a>
-		<a href="https://www.linkedin.com/in/lizziebourque" target="_blank">linkedin</a>
-		<a href="https://github.com/tinlizzieb" target="_blank">github</a>
+		<li> <%= link_to "twitter", "https://twitter.com/tinlizzieb" %> </li>
+		<li> <%= link_to "linkedin", "https://www.linkedin.com/in/lizziebourque" %> </li>
+		<li> <%= link_to "github", "https://github.com/tinlizzieb" %>
+    </li>
 	</ul>
+
+<%= link_to "make a dope post bro", posts_path %>
 
 </body>
 </html>
